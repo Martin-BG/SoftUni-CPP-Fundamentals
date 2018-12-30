@@ -16,6 +16,18 @@ add_executable(E05_T04.CarProgram "${E05_EXERCISE}04. CarProgram.cpp")
 #######################################
 set(EXAMS "07. Exams/")
 
+set(E_2018_01_14 "${EXAMS}2018.01.14/")
+add_executable(E_2018_01_14_T01.Extremes "${E_2018_01_14}01. Extremes.cpp")
+add_executable(E_2018_01_14_T02.Compression "${E_2018_01_14}02. Compression.cpp")
+add_executable(E_2018_01_14_T03.Data "${E_2018_01_14}03. Data.cpp")
+add_executable(E_2018_01_14_T04.Interference "${E_2018_01_14}04. Interference.cpp")
+
+set(E_2018_01_28 "${EXAMS}2018.01.28/")
+add_executable(E_2018_01_28_T01.Unused "${E_2018_01_28}01. Unused.cpp")
+add_executable(E_2018_01_28_T02.Decompression "${E_2018_01_28}02. Decompression.cpp")
+add_executable(E_2018_01_28_T03.Entities "${E_2018_01_28}03. Entities.cpp")
+add_executable(E_2018_01_28_T04.Decryption "${E_2018_01_28}04. Decryption.cpp")
+
 set(E_2018_07_15 "${EXAMS}2018.07.15/")
 add_executable(E_2018_07_15_T01.Secret "${E_2018_07_15}01. Secret.cpp")
 add_executable(E_2018_07_15_T02.FormatLines "${E_2018_07_15}02. FormatLines.cpp")
