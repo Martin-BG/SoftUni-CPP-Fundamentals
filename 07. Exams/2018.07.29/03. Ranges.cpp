@@ -3,8 +3,6 @@
 #include <vector>
 #include <map>
 
-#pragma GCC optimize ("O3")
-
 void parseInputData(std::map<int, int>& ranges, std::vector<int>& points) {
   std::istringstream input;
   int start, end;
@@ -24,8 +22,7 @@ void parseInputData(std::map<int, int>& ranges, std::vector<int>& points) {
 }
 
 int main() {
-  std::ostream::sync_with_stdio(false);
-  std::istream::sync_with_stdio(false);
+  std::ios_base::sync_with_stdio(false);
   std::cin.tie(nullptr);
 
   std::map<int, int> ranges;
