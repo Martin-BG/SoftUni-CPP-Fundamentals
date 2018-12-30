@@ -55,7 +55,7 @@ int main() {
   }
 
   std::unordered_map<char, char> encryptionMap;
-  for (auto encr : tables[word]) {
+  for (auto const& encr : tables[word]) {
     encryptionMap[encr.second] = encr.first;
   }
 
