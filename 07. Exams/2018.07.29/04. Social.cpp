@@ -57,7 +57,7 @@ public:
   }
 };
 
-void parsePersons(SocialNetwork& socialNetwork) {
+void parsePeople(SocialNetwork& socialNetwork) {
   std::istringstream iss;
   std::string line, name, profession;
   while (getline(std::cin, line) && line != "---") {
@@ -102,7 +102,7 @@ int main() {
 
   SocialNetwork socialNetwork;
 
-  parsePersons(socialNetwork);
+  parsePeople(socialNetwork);
   parseFriendships(socialNetwork);
 
   std::string result = processSuggestionRequests(socialNetwork);
