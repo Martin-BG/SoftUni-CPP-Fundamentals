@@ -1,12 +1,14 @@
 #include <iostream>
 #include <unordered_map>
+#include <unordered_set>
 #include <set>
+#include <vector>
 #include <sstream>
 
 class SocialNetwork {
 private:
-  std::unordered_map<std::string, std::set<std::string>> byPersonsByProfession; // profession -> persons
-  std::unordered_map<std::string, std::set<std::string>> byFriends; // person -> friends
+  std::unordered_map<std::string, std::vector<std::string>> byPersonsByProfession; // profession -> persons
+  std::unordered_map<std::string, std::unordered_set<std::string>> byFriends; // person -> friends
   std::unordered_map<std::string, std::string> byProfession; // person -> profession
   std::unordered_map<std::string, std::string> byConnection; // person -> group "leader" - Union-Find algorithm
 
@@ -29,7 +31,7 @@ private:
 
 public:
   void addPerson(std::string const& name, std::string const& profession) {
-    this->byPersonsByProfession[profession].emplace(name);
+    this->byPersonsByProfession[profession].emplace_back(name);
     this->byProfession[name] = profession;
     this->byFriends[name] = { };
     this->byConnection[name] = name;
