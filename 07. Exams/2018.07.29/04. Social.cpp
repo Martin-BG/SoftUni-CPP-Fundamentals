@@ -10,10 +10,11 @@ private:
   std::unordered_map<std::string, std::vector<std::string>> professionPeople; // profession -> people
   std::unordered_map<std::string, std::unordered_set<std::string>> personFriends; // person -> friends
   std::unordered_map<std::string, std::string> personProfession; // person -> profession
-  std::unordered_map<std::string, std::string> personGroup; // person -> group "leader" - Union-Find algorithm
+  std::unordered_map<std::string, size_t> personGroup; // person -> groupId - Union-Find algorithm
+  size_t nextGroup = 0;
 
   void updateConnections(std::string const& personA, std::string const& personB) {
-    std::string from, to;
+    size_t from, to;
     if (this->personFriends[personA].size() > this->personFriends[personB].size()) {
       from = this->personGroup[personB];
       to = this->personGroup[personA];
@@ -34,7 +35,7 @@ public:
     this->professionPeople[profession].emplace_back(name);
     this->personProfession[name] = profession;
     this->personFriends[name] = { };
-    this->personGroup[name] = name;
+    this->personGroup[name] = this->nextGroup++;
   }
 
   void makeFriends(std::string const& personA, std::string const& personB) {
@@ -46,7 +47,7 @@ public:
   std::set<std::string> suggestFriends(std::string const& forPerson) const {
     std::set<std::string> suggestions;
     std::string profession = this->personProfession.at(forPerson);
-    std::string group = this->personGroup.at(forPerson);
+    size_t group = this->personGroup.at(forPerson);
     auto const& friends = this->personFriends.at(forPerson);
     for (auto const& person : this->professionPeople.at(profession)) {
       if (person != forPerson && this->personGroup.at(person) == group && friends.find(person) == friends.end()) {
