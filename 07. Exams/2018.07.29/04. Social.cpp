@@ -7,22 +7,22 @@
 
 class SocialNetwork {
 private:
-  std::unordered_map<std::string, std::vector<std::string>> byPersonsByProfession; // profession -> persons
-  std::unordered_map<std::string, std::unordered_set<std::string>> byFriends; // person -> friends
-  std::unordered_map<std::string, std::string> byProfession; // person -> profession
-  std::unordered_map<std::string, std::string> byConnection; // person -> group "leader" - Union-Find algorithm
+  std::unordered_map<std::string, std::vector<std::string>> professionPersons; // profession -> persons
+  std::unordered_map<std::string, std::unordered_set<std::string>> personFriends; // person -> friends
+  std::unordered_map<std::string, std::string> personProfession; // person -> profession
+  std::unordered_map<std::string, std::string> personGroup; // person -> group "leader" - Union-Find algorithm
 
   void updateConnections(std::string const& personA, std::string const& personB) {
     std::string from, to;
-    if (this->byFriends[personA].size() > this->byFriends[personB].size()) {
-      from = this->byConnection[personB];
-      to = this->byConnection[personA];
+    if (this->personFriends[personA].size() > this->personFriends[personB].size()) {
+      from = this->personGroup[personB];
+      to = this->personGroup[personA];
     } else {
-      from = this->byConnection[personA];
-      to = this->byConnection[personB];
+      from = this->personGroup[personA];
+      to = this->personGroup[personB];
     }
 
-    for (auto& pair : this->byConnection) {
+    for (auto& pair : this->personGroup) {
       if (pair.second == from) {
         pair.second = to;
       }
@@ -31,25 +31,25 @@ private:
 
 public:
   void addPerson(std::string const& name, std::string const& profession) {
-    this->byPersonsByProfession[profession].emplace_back(name);
-    this->byProfession[name] = profession;
-    this->byFriends[name] = { };
-    this->byConnection[name] = name;
+    this->professionPersons[profession].emplace_back(name);
+    this->personProfession[name] = profession;
+    this->personFriends[name] = { };
+    this->personGroup[name] = name;
   }
 
   void makeFriends(std::string const& personA, std::string const& personB) {
-    this->byFriends[personA].emplace(personB);
-    this->byFriends[personB].emplace(personA);
+    this->personFriends[personA].emplace(personB);
+    this->personFriends[personB].emplace(personA);
     this->updateConnections(personA, personB);
   }
 
   std::set<std::string> suggestFriends(std::string const& forPerson) const {
     std::set<std::string> suggestions;
-    std::string profession = this->byProfession.at(forPerson);
-    std::string group = this->byConnection.at(forPerson);
-    auto const& friends = this->byFriends.at(forPerson);
-    for (auto const& person : this->byPersonsByProfession.at(profession)) {
-      if (person != forPerson && this->byConnection.at(person) == group && friends.find(person) == friends.end()) {
+    std::string profession = this->personProfession.at(forPerson);
+    std::string group = this->personGroup.at(forPerson);
+    auto const& friends = this->personFriends.at(forPerson);
+    for (auto const& person : this->professionPersons.at(profession)) {
+      if (person != forPerson && this->personGroup.at(person) == group && friends.find(person) == friends.end()) {
         suggestions.emplace(person);
       }
     }
