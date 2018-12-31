@@ -7,7 +7,7 @@
 
 class SocialNetwork {
 private:
-  std::unordered_map<std::string, std::vector<std::string>> professionPersons; // profession -> persons
+  std::unordered_map<std::string, std::vector<std::string>> professionPeople; // profession -> people
   std::unordered_map<std::string, std::unordered_set<std::string>> personFriends; // person -> friends
   std::unordered_map<std::string, std::string> personProfession; // person -> profession
   std::unordered_map<std::string, std::string> personGroup; // person -> group "leader" - Union-Find algorithm
@@ -31,7 +31,7 @@ private:
 
 public:
   void addPerson(std::string const& name, std::string const& profession) {
-    this->professionPersons[profession].emplace_back(name);
+    this->professionPeople[profession].emplace_back(name);
     this->personProfession[name] = profession;
     this->personFriends[name] = { };
     this->personGroup[name] = name;
@@ -48,7 +48,7 @@ public:
     std::string profession = this->personProfession.at(forPerson);
     std::string group = this->personGroup.at(forPerson);
     auto const& friends = this->personFriends.at(forPerson);
-    for (auto const& person : this->professionPersons.at(profession)) {
+    for (auto const& person : this->professionPeople.at(profession)) {
       if (person != forPerson && this->personGroup.at(person) == group && friends.find(person) == friends.end()) {
         suggestions.emplace(person);
       }
@@ -100,7 +100,7 @@ int main() {
   std::ios_base::sync_with_stdio(false);
   std::cin.tie(nullptr);
 
-  SocialNetwork socialNetwork{ };
+  SocialNetwork socialNetwork;
 
   parsePersons(socialNetwork);
   parseFriendships(socialNetwork);
