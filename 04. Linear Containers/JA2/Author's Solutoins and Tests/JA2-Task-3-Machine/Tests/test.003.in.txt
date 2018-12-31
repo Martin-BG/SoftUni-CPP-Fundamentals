@@ -1,0 +1,15 @@
+89
+discard
+113
+-113
+sum
+42
+sum
+69
+sum
+13
+sum
+1
+2
+sum
+end
