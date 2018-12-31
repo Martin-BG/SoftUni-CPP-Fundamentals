@@ -55,7 +55,7 @@ public:
   }
 };
 
-void readPersons(SocialNetwork& socialNetwork) {
+void parsePersons(SocialNetwork& socialNetwork) {
   std::istringstream iss;
   std::string line, name, profession;
   while (getline(std::cin, line) && line != "---") {
@@ -66,7 +66,7 @@ void readPersons(SocialNetwork& socialNetwork) {
   }
 }
 
-void readFriendships(SocialNetwork& socialNetwork) {
+void parseFriendships(SocialNetwork& socialNetwork) {
   std::istringstream iss;
   std::string line, personA, personB;
   while (getline(std::cin, line) && line != "---") {
@@ -83,13 +83,13 @@ std::string processSuggestionRequests(const SocialNetwork& socialNetwork) {
   while (getline(std::cin, person) && person != "---") {
     auto suggestions = socialNetwork.suggestFriends(person);
     if (suggestions.empty()) {
-      oss << '-' << std::endl;
+      oss << '-';
     } else {
       for (auto const& suggestion : suggestions) {
         oss << suggestion << ' ';
       }
-      oss << std::endl;
     }
+    oss << std::endl;
   }
   return oss.str();
 }
@@ -100,8 +100,8 @@ int main() {
 
   SocialNetwork socialNetwork{ };
 
-  readPersons(socialNetwork);
-  readFriendships(socialNetwork);
+  parsePersons(socialNetwork);
+  parseFriendships(socialNetwork);
 
   std::string result = processSuggestionRequests(socialNetwork);
 
