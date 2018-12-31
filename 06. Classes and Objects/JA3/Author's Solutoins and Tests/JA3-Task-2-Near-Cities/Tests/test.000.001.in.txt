@@ -1,0 +1,4 @@
+3
+Sofia 0 0
+Burgas 350 0
+Pernik 0 -5

@@ -1,0 +1,11 @@
+10
+Brussels 6 7
+Mingelchaur -6 -5
+Blagoevgrad 7 -10
+Baku -8 0
+Melbourne 1 4
+Sertaozinho -2 9
+Newcastle 2 0
+Kandi -2 5
+BoboDioulasso -2 -3
+RiodasOstras -7 9

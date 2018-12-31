@@ -1,0 +1,6 @@
+5
+Sertaozinho 9 3
+Townsville -5 2
+Mostar 7 -6
+Ndola 5 -2
+Votorantim -9 -9

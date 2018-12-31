@@ -1,0 +1,9 @@
+3
+A 3 a b c
+B 2 d e
+C 4 a b c d
+4
+A
+A
+C
+A
