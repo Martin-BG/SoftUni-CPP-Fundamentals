@@ -13,6 +13,15 @@ add_executable(E05_T02.FilterByNameOrAge "${E05_EXERCISE}02. FilterByNameOrAge.c
 add_executable(E05_T03.FindPointIfInsideOrOutside "${E05_EXERCISE}03. FindPointIfInsideOrOutside.cpp")
 add_executable(E05_T04.CarProgram "${E05_EXERCISE}04. CarProgram.cpp")
 
+set(E05_HOMEWORK "${L05}Homework/")
+add_executable(H05_T01.CountRealNumbers "${E05_HOMEWORK}01. CountRealNumbers.cpp")
+add_executable(H05_T02.OddOccurrences "${E05_HOMEWORK}02. OddOccurrences.cpp")
+add_executable(H05_T03.Largest3 "${E05_HOMEWORK}03. Largest3.cpp")
+add_executable(H05_T04.ShortWords "${E05_HOMEWORK}04. ShortWords.cpp")
+add_executable(H05_T05.ShortNumbers "${E05_HOMEWORK}05. ShortNumbers.cpp")
+add_executable(H05_T06.Squares "${E05_HOMEWORK}06. Squares.cpp")
+add_executable(H05_T07.Miners "${E05_HOMEWORK}07. Miners.cpp")
+
 #######################################
 set(EXAMS "07. Exams/")
 
