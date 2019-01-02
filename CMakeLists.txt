@@ -5,6 +5,21 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
 #######################################
+set(L03 "03. Strings and Streams/")
+set(L03_DEMOS "${L03}Demos/")
+
+add_executable(L03_D01.C-Strings-Basics "${L03_DEMOS}01.C-Strings-Basics.cpp")
+add_executable(L03_D02.Non-Terminated-C-Strings "${L03_DEMOS}02.Non-Terminated-C-Strings.cpp")
+add_executable(L03_D03.std-string-Basics "${L03_DEMOS}03.std-string-Basics.cpp")
+add_executable(L03_D04.std-string-Comparison-and-Search "${L03_DEMOS}04.std-string-Comparison-and-Search.cpp")
+add_executable(L03_D05.std-string-Find-Multiple-Occurrences "${L03_DEMOS}05.std-string-Find-Multiple-Occurrences.cpp")
+add_executable(L03_D06.std-string-Substring-Erase-Replace "${L03_DEMOS}06.std-string-Substring-Erase-Replace.cpp")
+add_executable(L03_D07.Using-std-stringstream "${L03_DEMOS}07.Using-std-stringstream.cpp")
+add_executable(L03_D08.Reading-with-getline-and-Streams "${L03_DEMOS}08.Reading-with-getline-and-Streams.cpp")
+add_executable(L03_D09.Parsing-Numbers-from-a-Line "${L03_DEMOS}09.Parsing-Numbers-from-a-Line.cpp")
+add_executable(L03_D10.Reading-From-and-Writing-to-Files "${L03_DEMOS}10.Reading-From-and-Writing-to-Files.cpp")
+
+#######################################
 set(L04 "04. Linear Containers/")
 set(L04_DEMOS "${L04}Demos/")
 
