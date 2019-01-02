@@ -5,6 +5,26 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
 #######################################
+set(L02 "02. Functions, Arrays and Vectors/")
+set(L02_DEMOS "${L02}Demos/")
+
+add_executable(L02_D01.Calling-Functions "${L02_DEMOS}01.Calling-Functions.cpp")
+add_executable(L02_D02.Declare-and-Define-Function "${L02_DEMOS}02.Declare-and-Define-Function.cpp")
+add_executable(L02_D03.Declaring-vs-Defining-Functions "${L02_DEMOS}03.Declaring-vs-Defining-Functions.cpp")
+add_executable(L02_D04.Parameters-and-Returning-Values "${L02_DEMOS}04.Parameters-and-Returning-Values.cpp")
+add_executable(L02_D05.Overloaded-Functions "${L02_DEMOS}05.Overloaded-Functions.cpp")
+add_executable(L02_D06.Static-Variables-Inside-Functions "${L02_DEMOS}06.Static-Variables-Inside-Functions.cpp")
+add_executable(L02_D07.Creating-Cpp-Arrays "${L02_DEMOS}07.Creating-Cpp-Arrays.cpp")
+add_executable(L02_D08.Accessing-Array-Elements "${L02_DEMOS}08.Accessing-Array-Elements.cpp")
+add_executable(L02_D09.Reading-in-Array-Elements "${L02_DEMOS}09.Reading-in-Array-Elements.cpp")
+add_executable(L02_D10.Writing-out-Array-Elements "${L02_DEMOS}10.Writing-out-Array-Elements.cpp")
+add_executable(L02_D11.Arrays-with-Functions "${L02_DEMOS}11.Arrays-with-Functions.cpp")
+add_executable(L02_D12.Cpp-11-Range-Loop-and-Array-Class "${L02_DEMOS}12.Cpp-11-Range-Loop-and-Array-Class.cpp")
+add_executable(L02_D13.Initializing-STL-Vectors "${L02_DEMOS}13.Initializing-STL-Vectors.cpp")
+add_executable(L02_D14.STL-Vectors-as-Function-Parameters "${L02_DEMOS}14.STL-Vectors-as-Function-Parameters.cpp")
+add_executable(L02_D15.Returning-STL-Vectors-from-Functions "${L02_DEMOS}15.Returning-STL-Vectors-from-Functions.cpp")
+
+#######################################
 set(L03 "03. Strings and Streams/")
 set(L03_DEMOS "${L03}Demos/")
 
