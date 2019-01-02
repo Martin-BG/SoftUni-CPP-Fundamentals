@@ -38,6 +38,22 @@ add_executable(L05_H06.Squares "${E05_HOMEWORK}06. Squares.cpp")
 add_executable(L05_H07.Miners "${E05_HOMEWORK}07. Miners.cpp")
 
 #######################################
+set(L06 "06. Classes and Objects/")
+set(L06_DEMOS "${L06}Demos/")
+
+add_executable(L05_D01.typedef "${L06_DEMOS}01.typedef.cpp")
+add_executable(L05_D02.Enumerations "${L06_DEMOS}02.Enumerations.cpp")
+add_executable(L05_D03.Defining-Classes "${L06_DEMOS}03.Defining-Classes.cpp")
+add_executable(L05_D04.Using-Objects "${L06_DEMOS}04.Using-Objects.cpp")
+add_executable(L05_D05.Simple-Constructors "${L06_DEMOS}05.Simple-Constructors.cpp")
+add_executable(L05_D06.Pitfall-Same-Parameter-Names-As-Fields-aka-Hiding-Fields "${L06_DEMOS}06.Pitfall-Same-Parameter-Names-As-Fields-aka-Hiding-Fields.cpp")
+add_executable(L05_D07.Constructor-Initializer-List "${L06_DEMOS}07.Constructor-Initializer-List.cpp")
+add_executable(L05_D08.Simple-Methods "${L06_DEMOS}08.Simple-Methods.cpp")
+add_executable(L05_D09.Refactored-Methods "${L06_DEMOS}09.Refactored-Methods.cpp")
+add_executable(L05_D10.Encapsulation "${L06_DEMOS}10.Encapsulation.cpp")
+add_executable(L05_D11.Getters-and-Setters "${L06_DEMOS}11.Getters-and-Setters.cpp")
+
+#######################################
 set(EXAMS "07. Exams/")
 
 set(E_2018_01_09_PREP "${EXAMS}2018.01.09-ExamPrep/")
