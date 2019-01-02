@@ -5,6 +5,18 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
 #######################################
+set(L04 "04. Linear Containers/")
+set(L04_DEMOS "${L04}Demos/")
+
+add_executable(L04_D01.Multidimensional-Arrays "${L04_DEMOS}01.Multidimensional-Arrays.cpp")
+add_executable(L04_D02.Row-Major-Order-in-MD-Arrays "${L04_DEMOS}02.Row-Major-Order-in-Multidimensional-Arrays.cpp")
+add_executable(L04_D03.Multidimensional-Containers "${L04_DEMOS}03.Multidimensional-Containers.cpp")
+add_executable(L04_D04.vector "${L04_DEMOS}04.vector.cpp")
+add_executable(L04_D05.Using-Iterators-with-vector "${L04_DEMOS}05.Using-Iterators-with-vector.cpp")
+add_executable(L04_D06.list "${L04_DEMOS}06.list.cpp")
+add_executable(L04_D07.Container-Adaptors "${L04_DEMOS}07.Container-Adaptors.cpp")
+
+#######################################
 set(L05 "05. STL Associative Containers/")
 set(L05_DEMOS "${L05}Demos/")
 
@@ -46,7 +58,7 @@ add_executable(L05_D02.Enumerations "${L06_DEMOS}02.Enumerations.cpp")
 add_executable(L05_D03.Defining-Classes "${L06_DEMOS}03.Defining-Classes.cpp")
 add_executable(L05_D04.Using-Objects "${L06_DEMOS}04.Using-Objects.cpp")
 add_executable(L05_D05.Simple-Constructors "${L06_DEMOS}05.Simple-Constructors.cpp")
-add_executable(L05_D06.Pitfall-Same-Parameter-Names-As-Fields-aka-Hiding-Fields "${L06_DEMOS}06.Pitfall-Same-Parameter-Names-As-Fields-aka-Hiding-Fields.cpp")
+add_executable(L05_D06.Pitfall-Hiding-Fields "${L06_DEMOS}06.Pitfall-Same-Parameter-Names-As-Fields-aka-Hiding-Fields.cpp")
 add_executable(L05_D07.Constructor-Initializer-List "${L06_DEMOS}07.Constructor-Initializer-List.cpp")
 add_executable(L05_D08.Simple-Methods "${L06_DEMOS}08.Simple-Methods.cpp")
 add_executable(L05_D09.Refactored-Methods "${L06_DEMOS}09.Refactored-Methods.cpp")
