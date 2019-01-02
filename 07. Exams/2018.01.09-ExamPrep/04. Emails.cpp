@@ -23,15 +23,14 @@ int main() {
     }
     if (count > 0) {
       matchingMessages[count] = line;
+      while (matchingMessages.size() > pageSize) {
+        matchingMessages.erase(std::prev(matchingMessages.end()));
+      }
     }
   }
 
-  size_t printed = 0;
   for (auto const& pair : matchingMessages) {
     std::cout << pair.second << std::endl;
-    if (++printed >= pageSize) {
-      break;
-    }
   }
 
   return 0;
