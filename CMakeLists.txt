@@ -5,6 +5,28 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
 #######################################
+set(L01 "01. Basic Syntax/")
+set(L01_DEMOS "${L01}Demos/")
+
+add_executable(L01_D01.Declaring-Initializing-Variables "${L01_DEMOS}01.Declaring-Initializing-Variables.cpp")
+add_executable(L01_D02.Uninitialized-Locals "${L01_DEMOS}02.Uninitialized-Locals.cpp")
+add_executable(L01_D03.Globals-and-Locals "${L01_DEMOS}03.Globals-and-Locals.cpp")
+add_executable(L01_D04.Constants "${L01_DEMOS}04.Constants.cpp")
+add_executable(L01_D05.Integer-Types "${L01_DEMOS}05.Integer-Types.cpp")
+add_executable(L01_D06.Floating-Point-Types "${L01_DEMOS}06.Floating-Point-Types.cpp")
+add_executable(L01_D07.Character-Types "${L01_DEMOS}07.Character-Types.cpp")
+add_executable(L01_D08.Boolean-Type "${L01_DEMOS}08.Boolean-Type.cpp")
+add_executable(L01_D09.Literals "${L01_DEMOS}09.Literals.cpp")
+add_executable(L01_D10.Operators-and-Expressions "${L01_DEMOS}10.Operators-and-Expressions.cpp")
+add_executable(L01_D11.Conditionals "${L01_DEMOS}11.Conditionals.cpp")
+add_executable(L01_D12.Conditional-Pitfall "${L01_DEMOS}12.Conditional-Pitfall.cpp")
+add_executable(L01_D13.Switch-Case "${L01_DEMOS}13.Switch-Case.cpp")
+add_executable(L01_D14.For-Loop "${L01_DEMOS}14.For-Loop.cpp")
+add_executable(L01_D15.While-Loops "${L01_DEMOS}15.While-Loops.cpp")
+add_executable(L01_D16.cin-and-cout "${L01_DEMOS}16.cin-and-cout.cpp")
+add_executable(L01_D17.Reading-Multiple-Numbers "${L01_DEMOS}17.Reading-Multiple-Numbers.cpp")
+
+#######################################
 set(L02 "02. Functions, Arrays and Vectors/")
 set(L02_DEMOS "${L02}Demos/")
 
