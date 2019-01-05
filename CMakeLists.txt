@@ -63,8 +63,8 @@ add_executable(L03_D10.Reading-From-and-Writing-to-Files "${L03_DEMOS}10.Reading
 
 #######################################
 set(L04 "04. Linear Containers/")
-set(L04_DEMOS "${L04}Demos/")
 
+set(L04_DEMOS "${L04}Demos/")
 add_executable(L04_D01.Multidimensional-Arrays "${L04_DEMOS}01.Multidimensional-Arrays.cpp")
 add_executable(L04_D02.Row-Major-Order-in-MD-Arrays "${L04_DEMOS}02.Row-Major-Order-in-Multidimensional-Arrays.cpp")
 add_executable(L04_D03.Multidimensional-Containers "${L04_DEMOS}03.Multidimensional-Containers.cpp")
@@ -72,6 +72,9 @@ add_executable(L04_D04.vector "${L04_DEMOS}04.vector.cpp")
 add_executable(L04_D05.Using-Iterators-with-vector "${L04_DEMOS}05.Using-Iterators-with-vector.cpp")
 add_executable(L04_D06.list "${L04_DEMOS}06.list.cpp")
 add_executable(L04_D07.Container-Adaptors "${L04_DEMOS}07.Container-Adaptors.cpp")
+
+set(L04_JA2 "${L04}JA2/")
+add_executable(L04_JA2_T01.AverageHexColors "${L04_JA2}01. AverageHexColors.cpp")
 
 #######################################
 set(L05 "05. STL Associative Containers/")
