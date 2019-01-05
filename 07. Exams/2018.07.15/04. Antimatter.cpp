@@ -51,12 +51,7 @@ public:
   }
 };
 
-int main() {
-  std::ostream::sync_with_stdio(false);
-  std::istream::sync_with_stdio(false);
-  std::cin.tie(nullptr);
-
-  std::list<Particle> particles;
+void parseParticles(std::list<Particle>& particles) {
   int particlesCount;
   std::cin >> particlesCount;
 
@@ -65,17 +60,14 @@ int main() {
     std::cin >> type >> positionX >> positionY >> speedX >> speedY >> lifetime;
     particles.emplace_back(type == 'm', positionX, positionY, speedX, speedY, lifetime);
   }
+}
 
+void tickParticles(std::list<Particle>& particles,
+                   int ticks,
+                   size_t& matterParticlesCount,
+                   size_t& antimatterParticlesCount,
+                   size_t& collidedParticles) {
   std::unordered_map<long, std::list<Particle*>> particlesByPosition;
-  for (auto& particle: particles) {
-    particlesByPosition[particle.getPosition()].push_back(&particle);
-  }
-
-  int ticks;
-  std::cin >> ticks;
-
-  size_t collidedParticles = 0;
-
   while (--ticks >= 0) {
     particlesByPosition.clear();
     particles.remove_if([&](Particle& particle) {
@@ -98,19 +90,16 @@ int main() {
           hasAntimatter = true;
         }
         if (hasMatter && hasAntimatter) {
+          for (auto const& p: particlesList) {
+            p->setCollided();
+          }
+          collidedParticles += particlesList.size();
           break;
         }
-      }
-      if (hasMatter && hasAntimatter) {
-        for (auto const& particle: particlesList) {
-          particle->setCollided();
-        }
-        collidedParticles += particlesList.size();
       }
     }
   }
 
-  size_t matterParticlesCount = 0, antimatterParticlesCount = 0;
   for (auto const& particle : particles) {
     if (particle.isAlive()) {
       if (particle.isMatter()) {
@@ -120,6 +109,21 @@ int main() {
       }
     }
   }
+}
+
+int main() {
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(nullptr);
+
+  std::list<Particle> particles;
+  parseParticles(particles);
+
+  int ticks;
+  std::cin >> ticks;
+
+  size_t matterParticlesCount = 0, antimatterParticlesCount = 0, collidedParticles = 0;
+
+  tickParticles(particles, ticks, matterParticlesCount, antimatterParticlesCount, collidedParticles);
 
   std::cout << matterParticlesCount << " " << antimatterParticlesCount << std::endl << collidedParticles << std::endl;
 
