@@ -75,6 +75,7 @@ add_executable(L04_D07.Container-Adaptors "${L04_DEMOS}07.Container-Adaptors.cpp
 
 set(L04_JA2 "${L04}JA2/")
 add_executable(L04_JA2_T01.AverageHexColors "${L04_JA2}01. AverageHexColors.cpp")
+add_executable(L04_JA2_T02.WordMatching "${L04_JA2}02. WordMatching.cpp")
 
 #######################################
 set(L05 "05. STL Associative Containers/")
