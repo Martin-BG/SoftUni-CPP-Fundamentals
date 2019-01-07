@@ -112,8 +112,8 @@ add_executable(L05_H07.Miners "${E05_HOMEWORK}07. Miners.cpp")
 
 #######################################
 set(L06 "06. Classes and Objects/")
-set(L06_DEMOS "${L06}Demos/")
 
+set(L06_DEMOS "${L06}Demos/")
 add_executable(L05_D01.typedef "${L06_DEMOS}01.typedef.cpp")
 add_executable(L05_D02.Enumerations "${L06_DEMOS}02.Enumerations.cpp")
 add_executable(L05_D03.Defining-Classes "${L06_DEMOS}03.Defining-Classes.cpp")
@@ -125,6 +125,13 @@ add_executable(L05_D08.Simple-Methods "${L06_DEMOS}08.Simple-Methods.cpp")
 add_executable(L05_D09.Refactored-Methods "${L06_DEMOS}09.Refactored-Methods.cpp")
 add_executable(L05_D10.Encapsulation "${L06_DEMOS}10.Encapsulation.cpp")
 add_executable(L05_D11.Getters-and-Setters "${L06_DEMOS}11.Getters-and-Setters.cpp")
+
+set(L06_HOMEWORK "${L06}Homework/")
+add_executable(L05_H01.Distance "${L06_HOMEWORK}01. Distance.cpp")
+add_executable(L05_H02.AreaAndPerimeterOfRectangle "${L06_HOMEWORK}02. AreaAndPerimeterOfRectangle .cpp")
+add_executable(L05_H03.TimeCalculation "${L06_HOMEWORK}03. TimeCalculation.cpp")
+add_executable(L05_H04.StudentsInformation "${L06_HOMEWORK}04. StudentsInformation .cpp")
+add_executable(L05_H05.TotalAverageOfStudents "${L06_HOMEWORK}05. TotalAverageOfStudents.cpp")
 
 #######################################
 set(EXAMS "07. Exams/")
