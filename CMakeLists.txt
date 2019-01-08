@@ -81,10 +81,10 @@ add_executable(L04_JA2_T04.TheMatrix "${L04_JA2}04. TheMatrix.cpp")
 
 set(L04_J "${L04}Judge/")
 add_executable(L04_J_T01.FinedEvensInDualArray "${L04_J}01. FinedEvensInDualArray.cpp")
-add_executable(L04_J_T02.FindIndexInDualArray "${L04_J}02. FindIndexInDualArray .cpp")
-add_executable(L04_J_T03.FindEvenNumbersInVector "${L04_J}03. FindEvenNumbersInVector .c")
+add_executable(L04_J_T02.FindIndexInDualArray "${L04_J}02. FindIndexInDualArray.cpp")
+add_executable(L04_J_T03.FindEvenNumbersInVector "${L04_J}03. FindEvenNumbersInVector.cpp")
 add_executable(L04_J_T04.SortNumbersInGreaterOrder "${L04_J}04. SortNumbersInGreaterOrder.cpp")
-add_executable(L04_J_T05.FindSumOfAllNumbersInVector "${L04_J}05. FindSumOfAllNumbersInVector .cpp")
+add_executable(L04_J_T05.FindSumOfAllNumbersInVector "${L04_J}05. FindSumOfAllNumbersInVector.cpp")
 
 #######################################
 set(L05 "05. STL Associative Containers/")
