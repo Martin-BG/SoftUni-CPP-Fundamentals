@@ -4,7 +4,7 @@
 int main() {
   size_t rows, cols;
   std::cin >> rows >> cols;
-  std::vector<std::vector<char>> matrix(rows, std::vector<char>(cols));
+  std::vector<std::vector<int>> matrix(rows, std::vector<int>(cols));
 
   for (size_t row = 0; row < rows; ++row) {
     for (size_t col = 0; col < cols; ++col) {
