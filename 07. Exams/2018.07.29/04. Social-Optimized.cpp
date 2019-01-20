@@ -15,9 +15,9 @@ private:
   using PersonName = std::string;
   using ProfessionName = std::string;
 
-  GroupId nextGroupId = 1;
-  PersonId nextPersonId = 1;
-  ProfessionId nextProfessionId = 1;
+  GroupId nextGroupId = 0;
+  PersonId nextPersonId = 0;
+  ProfessionId nextProfessionId = 0;
 
   std::unordered_map<PersonName, PersonId> peopleIds;
   std::unordered_map<PersonId, PersonName> idsPeople;
