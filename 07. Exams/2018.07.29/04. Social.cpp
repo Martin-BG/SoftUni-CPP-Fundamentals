@@ -23,6 +23,10 @@ private:
       to = this->personGroup[personB];
     }
 
+    if (from == to) {
+      return;
+    }
+
     for (auto& pair : this->personGroup) {
       if (pair.second == from) {
         pair.second = to;
