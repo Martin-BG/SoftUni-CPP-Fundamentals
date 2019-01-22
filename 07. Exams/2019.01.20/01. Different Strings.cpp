@@ -17,9 +17,11 @@ int main() {
     if (std::isdigit(lineA[i])) {
       digitsSum += lineA[i] - '0';
     }
+
     if (std::isdigit(lineB[i])) {
       digitsSum += lineB[i] - '0';
     }
+
     if (lineA[i] == lineB[i]) {
       result[i] = lineA[i];
     } else if (std::toupper(lineA[i]) == std::toupper(lineB[i])) {
