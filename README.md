@@ -1,10 +1,10 @@
-# SoftUni-CPP-Fundamentals
-C++ Fundamentals course at SoftUni - solutions for exercises and exams
+# C++ Fundamentals
 
-https://softuni.bg/trainings/1810/cplusplus-fundamentals-november-2017
+**C++ Fundamentals** course at SoftUni - solutions for exercises and exams
 
-https://softuni.bg/trainings/2128/c-plus-plus-fundamentals-november-2018
+* [November 2017](https://softuni.bg/trainings/1810/cplusplus-fundamentals-november-2017)
+* [November 2018](https://softuni.bg/trainings/2128/c-plus-plus-fundamentals-november-2018)
 
-https://judge.softuni.bg/Contests/#!/List/ByCategory/93/CPlusPlus-Fundamentals-Exercises
+[Judge system - exercises](https://judge.softuni.bg/Contests/#!/List/ByCategory/93/CPlusPlus-Fundamentals-Exercises)
 
-https://judge.softuni.bg/Contests#!/List/ByCategory/94/CPlusPlus-Fundamentals-Exams
+[Judge system - exams](https://judge.softuni.bg/Contests#!/List/ByCategory/94/CPlusPlus-Fundamentals-Exams)
