@@ -7,7 +7,7 @@
 typedef std::vector<int> BusArrivalTimes;
 typedef std::vector<int>::size_type Index;
 
-Index getSoonestBusIndex(const BusArrivalTimes& busArrivalTimes, int trainArrivalTime);
+Index getSoonestBusIndex(BusArrivalTimes const& busArrivalTimes, int trainArrivalTime);
 
 std::vector<int> getBusArrivalTimes();
 
@@ -29,7 +29,7 @@ int main() {
   return 0;
 }
 
-Index getSoonestBusIndex(const BusArrivalTimes& busArrivalTimes, const int trainArrivalTime) {
+Index getSoonestBusIndex(BusArrivalTimes const& busArrivalTimes, const int trainArrivalTime) {
   int minWaitTime = -1;
 
   Index index = 0;
