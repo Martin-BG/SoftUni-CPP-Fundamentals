@@ -46,6 +46,9 @@ add_executable(L02_D13.Initializing-STL-Vectors "${L02_DEMOS}13.Initializing-STL
 add_executable(L02_D14.STL-Vectors-as-Function-Parameters "${L02_DEMOS}14.STL-Vectors-as-Function-Parameters.cpp")
 add_executable(L02_D15.Returning-STL-Vectors-from-Functions "${L02_DEMOS}15.Returning-STL-Vectors-from-Functions.cpp")
 
+set(JA01 "${L02}JA1/")
+add_executable(JA01_03.Bus "${JA01}03. Bus.cpp")
+
 #######################################
 set(L03 "03. Strings and Streams/")
 set(L03_DEMOS "${L03}Demos/")
