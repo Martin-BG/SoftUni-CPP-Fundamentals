@@ -8,10 +8,9 @@ Pipes parsePipes(int pipesCount);
 int parseInt();
 
 int main() {
-  int pipesCount = parseInt();
-
-  Pipes pipesOld = parsePipes(pipesCount);
-  Pipes pipesNew = parsePipes(pipesCount);
+  const int pipesCount = parseInt();
+  const Pipes pipesOld = parsePipes(pipesCount);
+  const Pipes pipesNew = parsePipes(pipesCount);
 
   for (int i = 0; i < pipesCount; ++i) {
     int yearsLeft = pipesNew[i] / (pipesNew[i] - pipesOld[i]);
