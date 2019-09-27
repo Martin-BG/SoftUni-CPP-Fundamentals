@@ -47,6 +47,7 @@ add_executable(L02_D14.STL-Vectors-as-Function-Parameters "${L02_DEMOS}14.STL-Ve
 add_executable(L02_D15.Returning-STL-Vectors-from-Functions "${L02_DEMOS}15.Returning-STL-Vectors-from-Functions.cpp")
 
 set(JA01 "${L02}JA1/")
+add_executable(JA01_01.Pipes "${JA01}01. Pipes.cpp")
 add_executable(JA01_03.Bus "${JA01}03. Bus.cpp")
 
 #######################################
