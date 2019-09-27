@@ -48,6 +48,7 @@ add_executable(L02_D15.Returning-STL-Vectors-from-Functions "${L02_DEMOS}15.Retu
 
 set(JA01 "${L02}JA1/")
 add_executable(JA01_01.Pipes "${JA01}01. Pipes.cpp")
+add_executable(JA01_01.Modulated-Sum "${JA01}02. Modulated Sum.cpp")
 add_executable(JA01_03.Bus "${JA01}03. Bus.cpp")
 
 #######################################
