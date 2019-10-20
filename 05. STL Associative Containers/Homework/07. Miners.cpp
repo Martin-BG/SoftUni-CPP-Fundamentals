@@ -1,7 +1,6 @@
 #include <iostream>
 #include <map>
 #include <vector>
-#include <sstream>
 
 int main() {
   std::map<std::string, size_t> resourceQuantity;
