@@ -120,7 +120,7 @@ add_executable(L05_H01.CountRealNumbers "${E05_HOMEWORK}01. CountRealNumbers.cpp
 add_executable(L05_H02.OddOccurrences "${E05_HOMEWORK}02. OddOccurrences.cpp")
 add_executable(L05_H03.Largest3 "${E05_HOMEWORK}03. Largest3.cpp")
 add_executable(L05_H04.ShortWords "${E05_HOMEWORK}04. ShortWords.cpp")
-add_executable(L05_H05.ShortNumbers "${E05_HOMEWORK}05. ShortNumbers.cpp")
+add_executable(L05_H05.SortNumbers "${E05_HOMEWORK}05. SortNumbers.cpp")
 add_executable(L05_H06.Squares "${E05_HOMEWORK}06. Squares.cpp")
 add_executable(L05_H07.Miners "${E05_HOMEWORK}07. Miners.cpp")
 
