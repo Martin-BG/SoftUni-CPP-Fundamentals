@@ -6,9 +6,7 @@ void fillMatrix(std::vector<std::vector<char>>& matrix,
                 char fillChar,
                 char replaceChar,
                 size_t row, size_t col) {
-  if (row < 0 || row > rows - 1 ||
-      col < 0 || col > cols - 1 ||
-      matrix[row][col] != replaceChar) {
+  if (row >= rows || col >= cols || matrix[row][col] != replaceChar) {
     return;
   }
 
