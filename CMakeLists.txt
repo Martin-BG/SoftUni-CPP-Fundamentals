@@ -83,6 +83,7 @@ add_executable(L04_JA2_T01.AverageHexColors "${L04_JA2}01. AverageHexColors.cpp"
 add_executable(L04_JA2_T02.WordMatching "${L04_JA2}02. WordMatching.cpp")
 add_executable(L04_JA2_T03.Machine "${L04_JA2}03. Machine.cpp")
 add_executable(L04_JA2_T04.TheMatrix "${L04_JA2}04. TheMatrix.cpp")
+add_executable(L04_JA2_T04.TheMatrixWithTemplates "${L04_JA2}04. TheMatrixWithTemplates.cpp")
 
 set(L04_J "${L04}Judge/")
 add_executable(L04_J_T01.FinedEvensInDualArray "${L04_J}01. FinedEvensInDualArray.cpp")
