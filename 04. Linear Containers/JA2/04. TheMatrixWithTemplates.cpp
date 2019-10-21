@@ -9,7 +9,7 @@ Matrix<T> readMatrix(std::istream& in);
 
 template<typename T>
 void fillMatrix(Matrix<T>& matrix,
-                T fill, T start,
+                const T& fill, const T& start,
                 size_t row, size_t col);
 
 template<typename T>
@@ -66,7 +66,7 @@ void readParams(const Matrix<T>& matrix,
 
 template<typename T>
 void fillMatrix(Matrix<T>& matrix,
-                const T fill, const T start,
+                const T& fill, const T& start,
                 const size_t row, const size_t col) {
   if (row >= matrix.size() || col >= matrix[row].size() || matrix[row][col] != start) {
     return;
