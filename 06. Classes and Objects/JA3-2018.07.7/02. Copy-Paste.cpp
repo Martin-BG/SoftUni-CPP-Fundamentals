@@ -8,11 +8,14 @@ private:
   std::string text;
 
   void copy(size_t start, size_t end) {
-    while (start > 0 && this->text[start - 1] != ' ') {
-      --start;
+    start = this->text.find_last_of(' ', start);
+    if (start == std::string::npos) {
+      start = 0;
+    } else {
+      ++start;
     }
 
-    end = this->text.find_first_of(' ', end);
+    end = this->text.find(' ', end);
 
     const size_t len = end - start;
 
