@@ -153,6 +153,11 @@ add_executable(L06_H2019_01.SentenceShifter "${L06_HW_2019}01. SentenceShifter.c
 add_executable(L06_H2019_02.Distance "${L06_HW_2019}02. Distance.cpp")
 add_executable(L06_H2019_03.Sales "${L06_HW_2019}03. Sales.cpp")
 
+set(L06_JA_2018 "${L06}JA3-2018.07.7/")
+add_executable(L06_JA2018_01.Sequence "${L06_JA_2018}01. Sequence.cpp")
+add_executable(L06_JA2018_02.CopyPaste "${L06_JA_2018}02. Copy-Paste.cpp")
+add_executable(L06_JA2018_03.Teams "${L06_JA_2018}03. Teams.cpp")
+add_executable(L06_JA2018_04.Message "${L06_JA_2018}04. Message.cpp")
 #######################################
 set(EXAMS "07. Exams/")
 
