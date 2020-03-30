@@ -54,6 +54,7 @@ add_executable(JA01_03.Bus "${JA01}03. Bus.cpp")
 set(Judge "${L02}Judge/")
 add_executable(Judge02_01.CompareArrays "${Judge}01. Compare Arrays.cpp")
 add_executable(Judge02_02.LongestSequence "${Judge}02. Longest Sequence.cpp")
+add_executable(Judge02_03.AboveAverage "${Judge}03. Above Average.cpp")
 add_executable(Judge02_04.MostFrequentNumber "${Judge}04. Most Frequent Number.cpp")
 
 #######################################
