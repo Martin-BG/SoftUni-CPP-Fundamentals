@@ -52,6 +52,7 @@ add_executable(JA01_01.Modulated-Sum "${JA01}02. Modulated Sum.cpp")
 add_executable(JA01_03.Bus "${JA01}03. Bus.cpp")
 
 set(Judge "${L02}Judge/")
+add_executable(Judge02_01.CompareArrays "${Judge}01. Compare Arrays.cpp")
 add_executable(Judge02_04.MostFrequentNumber "${Judge}04. Most Frequent Number.cpp")
 
 #######################################
