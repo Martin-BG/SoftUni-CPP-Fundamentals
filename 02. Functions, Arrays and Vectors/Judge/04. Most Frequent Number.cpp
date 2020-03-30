@@ -2,7 +2,7 @@
 
 int main() {
   int occurrences[10]{ 0 };
-  int most_occurrences{ -1 };
+  int mostOccurrences{ -1 };
 
   int numbers;
   std::cin >> numbers;
@@ -12,13 +12,13 @@ int main() {
     std::cin >> number;
     ++occurrences[number];
 
-    if (occurrences[number] > most_occurrences) {
-      most_occurrences = occurrences[number];
+    if (occurrences[number] > mostOccurrences) {
+      mostOccurrences = occurrences[number];
     }
   }
 
   for (int i = 0; i <= 9; ++i) {
-    if (occurrences[i] == most_occurrences) {
+    if (occurrences[i] == mostOccurrences) {
       std::cout << i << " ";
     }
   }
