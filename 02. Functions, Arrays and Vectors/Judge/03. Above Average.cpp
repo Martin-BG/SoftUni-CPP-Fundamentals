@@ -24,12 +24,12 @@ int main() {
 }
 
 int calculateAverage(const int* arr, int length) {
-  long sum{ 0L };
+  long long sum{ 0L };
   for (int i = 0; i < length; ++i) {
     sum += arr[i];
   }
 
-  return sum / length;
+  return (int) (sum / length);
 }
 
 void readArrayFromConsole(int*& arr, int& length) {
