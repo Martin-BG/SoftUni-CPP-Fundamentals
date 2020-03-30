@@ -51,6 +51,9 @@ add_executable(JA01_01.Pipes "${JA01}01. Pipes.cpp")
 add_executable(JA01_01.Modulated-Sum "${JA01}02. Modulated Sum.cpp")
 add_executable(JA01_03.Bus "${JA01}03. Bus.cpp")
 
+set(Judge "${L02}Judge/")
+add_executable(Judge02_04.MostFrequentNumber "${Judge}04. Most Frequent Number.cpp")
+
 #######################################
 set(L03 "03. Strings and Streams/")
 set(L03_DEMOS "${L03}Demos/")
