@@ -2,6 +2,7 @@
 #include <vector>
 #include <algorithm>
 #include <iterator>
+#include <sstream>
 
 int main() {
   using namespace std;
@@ -25,7 +26,6 @@ int main() {
     for (int col = 0; col < cols; ++col) {
       if (matrix[row][col] == numberToFind) {
         indexPairs.emplace_back(std::make_pair(row, col));
-
       }
     }
   }
@@ -36,11 +36,10 @@ int main() {
     transform(indexPairs.begin(), indexPairs.end(),
               ostream_iterator<string>(cout, "\n"),
               [](pair<int, int> const& indexPair) {
-                return to_string(indexPair.first) + " " + to_string(indexPair.second);
+                std::ostringstream out;
+                out << indexPair.first << " " << indexPair.second;
+                return out.str();
               });
-//    for (auto pair : indexPairs) {
-//      std::cout << pair.first << " " << pair.second << std::endl;
-//    }
   }
 
   return 0;
