@@ -10,18 +10,17 @@ int main() {
   int rows, cols;
   cin >> rows >> cols;
 
-  auto matrix = vector<vector<int>>(rows);
-  for (int row = 0; row < rows; ++row) {
-    matrix[row] = vector<int>(cols);
-    for (int col = 0; col < cols; ++col) {
-      cin >> matrix[row][col];
-    }
-  }
+  auto matrix{ vector<vector<int>>(rows, vector<int>(cols)) };
+
+  for_each(matrix.begin(), matrix.end(), [&cols](vector<int>& row) {
+    copy_n(istream_iterator<int>(cin), cols, row.begin());
+  });
 
   int numberToFind;
   cin >> numberToFind;
 
-  auto indexPairs = vector<pair<int, int>>();
+  auto indexPairs{ vector<pair<int, int>>() };
+
   for (int row = 0; row < rows; ++row) {
     for (int col = 0; col < cols; ++col) {
       if (matrix[row][col] == numberToFind) {
