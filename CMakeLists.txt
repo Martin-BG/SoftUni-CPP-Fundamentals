@@ -87,8 +87,8 @@ add_executable(L04_D06.list "${L04_DEMOS}06.list.cpp")
 add_executable(L04_D07.Container-Adaptors "${L04_DEMOS}07.Container-Adaptors.cpp")
 
 set(L04_HW "${L04}Homework/")
+add_executable(L04_HW01.CompareMatrices "${L04_HW}01. CompareMatrices.cpp")
 add_executable(L04_HW02.PositionsOf "${L04_HW}02. PositionsOf.cpp")
-
 
 set(L04_JA2 "${L04}JA2/")
 add_executable(L04_JA2_T01.AverageHexColors "${L04_JA2}01. AverageHexColors.cpp")
