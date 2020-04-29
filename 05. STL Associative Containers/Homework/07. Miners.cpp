@@ -1,9 +1,9 @@
 #include <iostream>
-#include <map>
+#include <unordered_map>
 #include <vector>
 
 int main() {
-  std::map<std::string, size_t> resourceQuantity;
+  std::unordered_map<std::string, size_t> resourceQuantity;
   std::vector<std::string> resourcesInOrder;
 
   std::string resource;
