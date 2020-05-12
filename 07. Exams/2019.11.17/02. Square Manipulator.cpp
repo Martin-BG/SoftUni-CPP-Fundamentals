@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <iterator>
 
 int main() {
   using namespace std;
@@ -36,7 +37,7 @@ int main() {
 
   sort(averages.begin(), averages.end());
 
-  for_each(averages.cbegin(), averages.cend(), [](int i) { cout << i << " "; });
+  copy(averages.cbegin(), averages.cend(), std::ostream_iterator<int>(cout, " "));
 
   return 0;
 }
