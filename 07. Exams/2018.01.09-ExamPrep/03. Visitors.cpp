@@ -9,7 +9,7 @@ private:
   std::unordered_map<std::string, size_t> nameCount; // name -> count of users with the name
   std::map<size_t, size_t> ageCount; // age -> count of users of that age
 public:
-  void add(std::string id, const std::string& name, size_t age) {
+  void add(const std::string& id, const std::string& name, size_t age) {
     if (this->ids.find(id) != this->ids.end()) {
       return;
     }
