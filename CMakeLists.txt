@@ -212,6 +212,12 @@ add_executable(E_2019_01_20T02.Planet "${E_2019_01_20}02. Planet.cpp")
 add_executable(E_2019_01_20T03.ProductsAndCities "${E_2019_01_20}03. Products and Cities.cpp")
 add_executable(E_2019_01_20T04.Costs "${E_2019_01_20}04. Costs.cpp")
 
+set(E_2019_02_03 "${EXAMS}2019.02.03/")
+add_executable(E_2019_02_03T01.MinMaxTemperature "${E_2019_02_03}01. Min-Max Temperature.cpp")
+add_executable(E_2019_02_03T02.CarDealership "${E_2019_02_03}02. Car Dealership.cpp")
+add_executable(E_2019_02_03T03.SortTheStudents "${E_2019_02_03}03. Sort The Students.cpp")
+add_executable(E_2019_02_03T04.TheMatrix "${E_2019_02_03}04. The Matrix.cpp")
+
 set(E_2019_11_17 "${EXAMS}2019.11.17/")
 add_executable(E_2019_11_17T01.Reporter "${E_2019_11_17}01. Reporter.cpp")
 add_executable(E_2019_11_17T02.SquareManipulator "${E_2019_11_17}02. Square Manipulator.cpp")
