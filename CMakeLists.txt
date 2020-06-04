@@ -164,6 +164,7 @@ add_executable(L06_H05.TotalAverageOfStudents "${L06_HOMEWORK}05. TotalAverageOf
 
 set(L06_HW_2019 "${L06}Homework - 2019/")
 add_executable(L06_H2019_01.SentenceShifter "${L06_HW_2019}01. SentenceShifter.cpp")
+add_executable(L06_H2019_01.SentenceShifter2 "${L06_HW_2019}01. SentenceShifter2.cpp")
 add_executable(L06_H2019_02.Distance "${L06_HW_2019}02. Distance.cpp")
 add_executable(L06_H2019_03.Sales "${L06_HW_2019}03. Sales.cpp")
 
