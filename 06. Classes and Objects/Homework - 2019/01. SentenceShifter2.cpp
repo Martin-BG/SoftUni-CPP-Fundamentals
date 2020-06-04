@@ -8,7 +8,8 @@
 class WordsShifter {
   const std::vector<std::string> words;
 public:
-  explicit WordsShifter(std::vector<std::string> words) : words(std::move(words)) { }
+  explicit WordsShifter(std::vector<std::string> words)
+      : words(std::move(words)) { }
 
   std::vector<std::string> getShiftedBy(size_t shiftBy) {
     if (this->words.empty()) {
@@ -45,7 +46,8 @@ int main() {
 }
 
 void printVectorToConsole(std::vector<std::string> shiftedWords) {
-  std::move(shiftedWords.begin(), shiftedWords.end(), std::ostream_iterator<std::string>(std::cout, "\n"));
+  std::move(shiftedWords.begin(), shiftedWords.end(),
+            std::ostream_iterator<std::string>(std::cout, "\n"));
 }
 
 std::vector<std::string> parseWordsFromConsole() {
