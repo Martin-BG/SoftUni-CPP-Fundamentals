@@ -34,20 +34,18 @@ void printVectorToConsole(std::vector<std::string> shiftedWords);
 std::vector<std::string> parseWordsFromConsole();
 
 int main() {
-  WordsShifter words(parseWordsFromConsole());
+  WordsShifter wordsShifter(parseWordsFromConsole());
 
   size_t shiftBy;
   std::cin >> shiftBy;
 
-  printVectorToConsole(words.getShiftedBy(shiftBy));
+  printVectorToConsole(wordsShifter.getShiftedBy(shiftBy));
 
   return 0;
 }
 
 void printVectorToConsole(std::vector<std::string> shiftedWords) {
-  std::ostringstream oss;
-  std::move(shiftedWords.begin(), shiftedWords.end(), std::ostream_iterator<std::string>(oss, "\n"));
-  std::cout << oss.str();
+  std::move(shiftedWords.begin(), shiftedWords.end(), std::ostream_iterator<std::string>(std::cout, "\n"));
 }
 
 std::vector<std::string> parseWordsFromConsole() {
