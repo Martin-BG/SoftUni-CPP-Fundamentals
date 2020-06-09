@@ -1,0 +1,3 @@
+= C++ Fundamentals - Exam (30 May 2020)
+
+Link to https://judge.softuni.bg/Contests/Practice/Index/2450[Judge]
