@@ -230,3 +230,8 @@ add_executable(E_2019_11_24T01.Punctuation "${E_2019_11_24}01. Punctuation.cpp")
 add_executable(E_2019_11_24T02.GarbageSorting "${E_2019_11_24}02. Garbage Sorting.cpp")
 add_executable(E_2019_11_24T03.Twins "${E_2019_11_24}03. Twins.cpp")
 add_executable(E_2019_11_24T04.Bomberman "${E_2019_11_24}04. Bomberman.cpp")
+
+set(E_2020_05_30 "${EXAMS}2020.05.30/")
+add_executable(E_2020_05_30T01.ShoppingList "${E_2020_05_30}01. Shopping List.cpp")
+add_executable(E_2020_05_30T02.SumOfOdds "${E_2020_05_30}02. Sum Of Odds.cpp")
+add_executable(E_2020_05_30T03.CoffeeShop "${E_2020_05_30}03. Coffee Shop.cpp")
