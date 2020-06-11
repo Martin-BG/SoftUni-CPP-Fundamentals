@@ -9,3 +9,5 @@
 [Judge system - exercises](https://judge.softuni.bg/Contests/#!/List/ByCategory/93/CPlusPlus-Fundamentals-Exercises)
 
 [Judge system - exams](https://judge.softuni.bg/Contests#!/List/ByCategory/94/CPlusPlus-Fundamentals-Exams)
+
+[Resources](http://svn.softuni.org/admin/svn/Cpp-Fundamentals/)
