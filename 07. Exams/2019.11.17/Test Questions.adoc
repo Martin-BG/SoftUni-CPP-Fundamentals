@@ -1,0 +1,110 @@
+===== 1. What will happen if you try to build a program(compile+link), which has a call to declared function `void foo()`, which has no body?
+
+- . Compilation error `call to foo() is ambiguous`;
+- , Linker error `undefined reference to foo()`;
+- . There will be no build errors, but the call to `foo()` will result in undefined behavior;
+- . Compilation warning `foo() is defined but not used`;
+
+===== 2. Is the following code valid?
+
+[source,cpp]
+----
+    int size = 0;
+    std::cin >> size;
+    int arr[size] = { 0 };
+----
+
+- . It is valid standard code;
+- , It is valid only if the compiler extension for VLA(variable size arrays) is supported;
+- . The code will not compile;
+- . This is invalid code no matter what compiler options and extensions are used;
+
+===== 3. Why the C-style strings always need to end with a terminating null character `\0`?
+
+- . It is only there for historical reasons and has no practical use;
+- . It is the only difference between C and C++ style strings;
+- , It is needed in order to use the C-style string methods (to know where the string ends);
+- . It makes the performance of the C-style string twice as fast;
+
+===== 4. Which operation will be faster?
+
+[source,cpp]
+----
+    std::string name = "Manol";
+
+    //option A
+    std::cout << name + "20";
+
+    //option B
+    std::cout << name.append("20");
+----
+
+- , Option B will be faster;K
+- . Option A will be faster;
+- . They will have the same speed of execution;
+- . The above source code will cause the program to crash;
+
+===== 5. Which of the listed standard C++ data structures will be the best suitable of we constantly want to erase the first element in the data structure.
+
+- . std::vector;
+- . std::deque;
+- , std::list;
+- . std::array;
+
+===== 6. What will be the output from this piece of code?
+
+[source,cpp]
+----
+    std::map<int, int> target;
+
+    std::cout << target[2] + target[3] << std::endl;
+----
+
+- . This piece of code will not compile;
+- . The program will crash due to map index being out-of-bound;
+- , `0` will be printed to the console;
+- . Random result will be printed to the console, but the value is unpredictable;
+
+===== 7. What will happen if we try use the std::sort() from the <algorithms> header to a standard std::list?
+
+- . The list will be sorted normally, because the list has member functions begin() and end();
+- . The list will be sorted normally, but this will work only for integers;
+- , The list cannot be sorted using the std::sort() from the <algorithm> header, because the list cannot use RandomAccessIterator;
+- . The standard C++ cannot be sorted;
+
+===== 8. What will be the output from this piece of code?
+
+[source,cpp]
+----
+    class Person {
+    public:
+    void setName(std::string & name){
+    _name = name;
+    }
+
+        std::string getName(){
+            return _name;
+        }
+
+    private:
+    std::string _name;
+    };
+
+
+    int main() {
+
+        std::string name = "Manol";
+        Person p;
+        p.setName(name);
+
+        name = "Trifon";
+        std::cout << p.getName();
+
+        return 0;
+    }
+----
+
+- , Manol;
+- . Trifon;
+- . ManolTrifon;
+- . The value is unpredictable;
