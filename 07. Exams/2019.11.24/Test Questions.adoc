@@ -1,0 +1,106 @@
+===== 1. What will happen if you try to build a program(compile+link), which has a call to declared and defined function?
+
+[source,cpp]
+----
+    void foo(int first = 10, int second) { }
+----
+
+- , Compilation error, because default function arguments can only be placed last in the argument ordering;
+- . Linker error `undefined reference to foo(int, int)`;
+- . There will be no build errors, but the call to `foo()` will result in undefined behavior;
+- . The function will execute normally;
+
+===== 2. Is the following code valid?
+
+[source,cpp]
+----
+    int size = 0;
+    std::cin >> size;
+    std::array<int, size> arr = { 0 };
+----
+
+- . It is valid standard code with no errors;
+- . It might be valid (this depends on the value of the `size` read from the standard input);
+- , Is is not valid, the code will not compile;
+- . It is valid, but it will produce run-time errors;
+
+===== 3. Is the following code valid?
+
+[source,cpp]
+----
+    std::string test;
+
+    for(int i = 0; i < 10000; ++i){
+        test += 'a';
+    }
+----
+
+- , It is perfectly valid;
+- . It is not valid, because the string class does not support += operator;
+- . It is not valid, because the string internal buffer will overflow;
+- . It is not value, because string’s += operator works only for strings but not for char’s;
+
+===== 4. What will happen if you erase the first element from a non-empty std::vector?
+
+- . You cannot erase elements from a std::vector;
+- . You cannot erase the first element in a std::vector – only elements from the back can be erased;
+- . The first element will be erased and there will be an empty slot at first position in the std::vector;
+- , The first element will be erased and all other elements will be shifted left;
+
+===== 5. If you have std::queue<int> with 5 elements inside - do you have a way to see what is the middle element without modifying or copying the queue.
+
+- , No you can’t;
+- . Yes, you can – simply access the middle element and check its value;
+- . Yes, you can – there is a special .peak() method for the queue;
+- . Yes, you can – there is a special .observe() method for the queue;
+
+===== 6. What will be the output from this piece of code?
+
+[source,cpp]
+----
+    std::set<int> ordered;
+    std::unordered_set<int> unordered;
+
+    for(int i = 0; i < 5; ++i){
+        ordered.insert(i);
+        unordered.insert(i);
+    }
+
+    if(ordered.size() == unordered.size()){
+        std::cout << "equal";
+    } else {
+        std::cout << "not equal";
+    }
+----
+
+- . not equal;
+- , equal;
+- . There will be a compile-time error – you cannot compare two different containers size();
+- . There will be a run-time error – you cannot compare two different containers size();
+
+===== 7. What will be the output from this piece of code?
+
+[source,cpp]
+----
+    std::set<int> ordered;
+
+    for(int i = 0; i < 5; ++i){
+        ordered.insert(i);
+    }
+
+    for(int i = 0; i < 5; ++i){
+        std::cout << ordered[i] << ' ';
+    }
+----
+
+- . 0 1 2 3 4;
+- . 0 0 0 0 0;
+- , There will be a compile-time error;
+- . 1 2 3 4 5;
+
+===== 8. What is the difference in C++ between a `struct` and a `class`?
+
+- . There is no difference;
+- . The `struct` is used to mark old C code style, while `class` is used for new C++ coding style;
+- , Only the default access modifier;
+- . Only `class` can have functions while `struct` cannot;
