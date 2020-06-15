@@ -235,3 +235,8 @@ set(E_2020_05_30 "${EXAMS}2020.05.30/")
 add_executable(E_2020_05_30T01.ShoppingList "${E_2020_05_30}01. Shopping List.cpp")
 add_executable(E_2020_05_30T02.SumOfOdds "${E_2020_05_30}02. Sum Of Odds.cpp")
 add_executable(E_2020_05_30T03.CoffeeShop "${E_2020_05_30}03. Coffee Shop.cpp")
+
+set(E_2020_06_06 "${EXAMS}2020.06.06/")
+add_executable(E_2020_06_06T01.SortingPlayers "${E_2020_06_06}01. Sorting Players.cpp")
+add_executable(E_2020_06_06T02.Space "${E_2020_06_06}02. Space.cpp")
+add_executable(E_2020_06_06T03.PetExhibition "${E_2020_06_06}03. Pet Exhibition.cpp")
