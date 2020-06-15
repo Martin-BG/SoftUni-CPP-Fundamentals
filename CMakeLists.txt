@@ -26,6 +26,9 @@ add_executable(L01_D15.While-Loops "${L01_DEMOS}15.While-Loops.cpp")
 add_executable(L01_D16.cin-and-cout "${L01_DEMOS}16.cin-and-cout.cpp")
 add_executable(L01_D17.Reading-Multiple-Numbers "${L01_DEMOS}17.Reading-Multiple-Numbers.cpp")
 
+set(L01_HW "${L01}Homework/")
+add_executable(L01_HW07.FactorialTrailingZeroes "${L01_HW}07. Factorial Trailing Zeroes.cpp")
+
 set(L01_J "${L01}Judge/")
 add_executable(L01_J01.OrderTwoNumbers "${L01_J}01. Order Two Numbers.cpp")
 add_executable(L01_J02.ProductSign "${L01_J}02. Product Sign.cpp")
