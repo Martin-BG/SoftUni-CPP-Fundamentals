@@ -106,12 +106,6 @@ add_executable(L04_D05.Using-Iterators-with-vector "${L04_DEMOS}05.Using-Iterato
 add_executable(L04_D06.list "${L04_DEMOS}06.list.cpp")
 add_executable(L04_D07.Container-Adaptors "${L04_DEMOS}07.Container-Adaptors.cpp")
 
-set(L04_HW "${L04}Homework/")
-add_executable(L04_HW01.CompareMatrices "${L04_HW}01. CompareMatrices.cpp")
-add_executable(L04_HW02.PositionsOf "${L04_HW}02. PositionsOf.cpp")
-add_executable(L04_HW03.MergeTrains "${L04_HW}03. MergeTrains.cpp")
-add_executable(L04_HW04.Brackets "${L04_HW}04. Brackets.cpp")
-
 set(L04_JA2 "${L04}JA2/")
 add_executable(L04_JA2_01.AverageHexColors "${L04_JA2}01. AverageHexColors.cpp")
 add_executable(L04_JA2_02.WordMatching "${L04_JA2}02. WordMatching.cpp")
@@ -125,6 +119,12 @@ add_executable(L04_J02.FindIndexInDualArray "${L04_J}02. FindIndexInDualArray.cp
 add_executable(L04_J03.FindEvenNumbersInVector "${L04_J}03. FindEvenNumbersInVector.cpp")
 add_executable(L04_J04.SortNumbersInGreaterOrder "${L04_J}04. SortNumbersInGreaterOrder.cpp")
 add_executable(L04_J05.FindSumOfAllNumbersInVector "${L04_J}05. FindSumOfAllNumbersInVector.cpp")
+
+set(L04_J_2020 "${L04}Judge 2020/")
+add_executable(L04_J2020_01.CompareMatrices "${L04_J_2020}01. CompareMatrices.cpp")
+add_executable(L04_J2020_02.PositionsOf "${L04_J_2020}02. PositionsOf.cpp")
+add_executable(L04_J2020_03.MergeTrains "${L04_J_2020}03. MergeTrains.cpp")
+add_executable(L04_J2020_04.Brackets "${L04_J_2020}04. Brackets.cpp")
 
 #######################################
 set(L05 "05. STL Associative Containers/")
