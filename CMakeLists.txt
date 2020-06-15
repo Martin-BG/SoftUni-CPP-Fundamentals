@@ -26,6 +26,14 @@ add_executable(L01_D15.While-Loops "${L01_DEMOS}15.While-Loops.cpp")
 add_executable(L01_D16.cin-and-cout "${L01_DEMOS}16.cin-and-cout.cpp")
 add_executable(L01_D17.Reading-Multiple-Numbers "${L01_DEMOS}17.Reading-Multiple-Numbers.cpp")
 
+set(L01_J "${L01}Judge/")
+add_executable(L01_J01.OrderTwoNumbers "${L01_J}01. Order Two Numbers.cpp")
+add_executable(L01_J02.ProductSign "${L01_J}02. Product Sign.cpp")
+add_executable(L01_J03.QuadraticEquation "${L01_J}03. Quadratic Equation.cpp")
+add_executable(L01_J04.1toN "${L01_J}04. 1 to N.cpp")
+add_executable(L01_J05.MinAndMax "${L01_J}05. Min and Max.cpp")
+add_executable(L01_J06.GreatestCommonDivisor "${L01_J}06. Greatest Common Divisor.cpp")
+
 #######################################
 set(L02 "02. Functions, Arrays and Vectors/")
 set(L02_DEMOS "${L02}Demos/")
@@ -48,16 +56,16 @@ add_executable(L02_D15.Returning-STL-Vectors-from-Functions "${L02_DEMOS}15.Retu
 
 set(JA01 "${L02}JA1/")
 add_executable(JA01_01.Pipes "${JA01}01. Pipes.cpp")
-add_executable(JA01_01.Modulated-Sum "${JA01}02. Modulated Sum.cpp")
+add_executable(JA01_02.Modulated-Sum "${JA01}02. Modulated Sum.cpp")
 add_executable(JA01_03.Bus "${JA01}03. Bus.cpp")
 
-set(Judge "${L02}Judge/")
-add_executable(Judge02_01.CompareArrays "${Judge}01. Compare Arrays.cpp")
-add_executable(Judge02_02.LongestSequence "${Judge}02. Longest Sequence.cpp")
-add_executable(Judge02_03.AboveAverage "${Judge}03. Above Average.cpp")
-add_executable(Judge02_04.MostFrequentNumber "${Judge}04. Most Frequent Number.cpp")
-add_executable(Judge02_05.CartesianProduct "${Judge}05. Cartesian Product.cpp")
-add_executable(Judge02_06.ClosestNumber "${Judge}06. Closest Numbers.cpp")
+set(L02_JUDGE "${L02}Judge/")
+add_executable(L02_J01.CompareArrays "${L02_JUDGE}01. Compare Arrays.cpp")
+add_executable(L02_J02.LongestSequence "${L02_JUDGE}02. Longest Sequence.cpp")
+add_executable(L02_J03.AboveAverage "${L02_JUDGE}03. Above Average.cpp")
+add_executable(L02_J04.MostFrequentNumber "${L02_JUDGE}04. Most Frequent Number.cpp")
+add_executable(L02_J05.CartesianProduct "${L02_JUDGE}05. Cartesian Product.cpp")
+add_executable(L02_J06.ClosestNumber "${L02_JUDGE}06. Closest Numbers.cpp")
 
 #######################################
 set(L03 "03. Strings and Streams/")
@@ -73,6 +81,15 @@ add_executable(L03_D07.Using-std-stringstream "${L03_DEMOS}07.Using-std-stringst
 add_executable(L03_D08.Reading-with-getline-and-Streams "${L03_DEMOS}08.Reading-with-getline-and-Streams.cpp")
 add_executable(L03_D09.Parsing-Numbers-from-a-Line "${L03_DEMOS}09.Parsing-Numbers-from-a-Line.cpp")
 add_executable(L03_D10.Reading-From-and-Writing-to-Files "${L03_DEMOS}10.Reading-From-and-Writing-to-Files.cpp")
+
+set(L03_JUDGE "${L03}Judge/")
+add_executable(L03_J01.CompareArraysAgain "${L03_JUDGE}01. Compare Arrays Again.cpp")
+add_executable(L03_J02.MathematicalExpression "${L03_JUDGE}02. Mathematical Expression.cpp")
+add_executable(L03_J03.TitleCase "${L03_JUDGE}03. Title Case.cpp")
+add_executable(L03_J04.ReplaceAll "${L03_JUDGE}04. Replace All.cpp")
+add_executable(L03_J05.InvalidInput "${L03_JUDGE}05. Invalid Input.cpp")
+add_executable(L03_J06.TheSignalAndTheNoise "${L03_JUDGE}06. The Signal and the Noise.cpp")
+add_executable(L03_J07.TheNoiseAndTheSignal "${L03_JUDGE}07. The Noise and the Signal.cpp")
 
 #######################################
 set(L04 "04. Linear Containers/")
@@ -93,18 +110,18 @@ add_executable(L04_HW03.MergeTrains "${L04_HW}03. MergeTrains.cpp")
 add_executable(L04_HW04.Brackets "${L04_HW}04. Brackets.cpp")
 
 set(L04_JA2 "${L04}JA2/")
-add_executable(L04_JA2_T01.AverageHexColors "${L04_JA2}01. AverageHexColors.cpp")
-add_executable(L04_JA2_T02.WordMatching "${L04_JA2}02. WordMatching.cpp")
-add_executable(L04_JA2_T03.Machine "${L04_JA2}03. Machine.cpp")
-add_executable(L04_JA2_T04.TheMatrix "${L04_JA2}04. TheMatrix.cpp")
-add_executable(L04_JA2_T04.TheMatrixWithTemplates "${L04_JA2}04. TheMatrixWithTemplates.cpp")
+add_executable(L04_JA2_01.AverageHexColors "${L04_JA2}01. AverageHexColors.cpp")
+add_executable(L04_JA2_02.WordMatching "${L04_JA2}02. WordMatching.cpp")
+add_executable(L04_JA2_03.Machine "${L04_JA2}03. Machine.cpp")
+add_executable(L04_JA2_04.TheMatrix "${L04_JA2}04. TheMatrix.cpp")
+add_executable(L04_JA2_04.TheMatrixWithTemplates "${L04_JA2}04. TheMatrixWithTemplates.cpp")
 
 set(L04_J "${L04}Judge/")
-add_executable(L04_J_T01.FinedEvensInDualArray "${L04_J}01. FinedEvensInDualArray.cpp")
-add_executable(L04_J_T02.FindIndexInDualArray "${L04_J}02. FindIndexInDualArray.cpp")
-add_executable(L04_J_T03.FindEvenNumbersInVector "${L04_J}03. FindEvenNumbersInVector.cpp")
-add_executable(L04_J_T04.SortNumbersInGreaterOrder "${L04_J}04. SortNumbersInGreaterOrder.cpp")
-add_executable(L04_J_T05.FindSumOfAllNumbersInVector "${L04_J}05. FindSumOfAllNumbersInVector.cpp")
+add_executable(L04_J01.FinedEvensInDualArray "${L04_J}01. FinedEvensInDualArray.cpp")
+add_executable(L04_J02.FindIndexInDualArray "${L04_J}02. FindIndexInDualArray.cpp")
+add_executable(L04_J03.FindEvenNumbersInVector "${L04_J}03. FindEvenNumbersInVector.cpp")
+add_executable(L04_J04.SortNumbersInGreaterOrder "${L04_J}04. SortNumbersInGreaterOrder.cpp")
+add_executable(L04_J05.FindSumOfAllNumbersInVector "${L04_J}05. FindSumOfAllNumbersInVector.cpp")
 
 #######################################
 set(L05 "05. STL Associative Containers/")
@@ -156,11 +173,11 @@ add_executable(L06_D10.Encapsulation "${L06_DEMOS}10.Encapsulation.cpp")
 add_executable(L06_D11.Getters-and-Setters "${L06_DEMOS}11.Getters-and-Setters.cpp")
 
 set(L06_HOMEWORK "${L06}Homework/")
-add_executable(L06_H01.Distance "${L06_HOMEWORK}01. Distance.cpp")
-add_executable(L06_H02.AreaAndPerimeterOfRectangle "${L06_HOMEWORK}02. AreaAndPerimeterOfRectangle .cpp")
-add_executable(L06_H03.TimeCalculation "${L06_HOMEWORK}03. TimeCalculation.cpp")
-add_executable(L06_H04.StudentsInformation "${L06_HOMEWORK}04. StudentsInformation .cpp")
-add_executable(L06_H05.TotalAverageOfStudents "${L06_HOMEWORK}05. TotalAverageOfStudents.cpp")
+add_executable(L06_HW01.Distance "${L06_HOMEWORK}01. Distance.cpp")
+add_executable(L06_HW02.AreaAndPerimeterOfRectangle "${L06_HOMEWORK}02. AreaAndPerimeterOfRectangle .cpp")
+add_executable(L06_HW03.TimeCalculation "${L06_HOMEWORK}03. TimeCalculation.cpp")
+add_executable(L06_HW04.StudentsInformation "${L06_HOMEWORK}04. StudentsInformation .cpp")
+add_executable(L06_HW05.TotalAverageOfStudents "${L06_HOMEWORK}05. TotalAverageOfStudents.cpp")
 
 set(L06_JUDGE_2019 "${L06}Judge - 2019/")
 add_executable(L06_J2019_01.SentenceShifter "${L06_JUDGE_2019}01. SentenceShifter.cpp")
@@ -168,11 +185,27 @@ add_executable(L06_J2019_01.SentenceShifter2 "${L06_JUDGE_2019}01. SentenceShift
 add_executable(L06_J2019_02.Distance "${L06_JUDGE_2019}02. Distance.cpp")
 add_executable(L06_J2019_03.Sales "${L06_JUDGE_2019}03. Sales.cpp")
 
-set(L06_JA_2018 "${L06}JA3-2018.07.7/")
-add_executable(L06_JA2018_01.Sequence "${L06_JA_2018}01. Sequence.cpp")
-add_executable(L06_JA2018_02.CopyPaste "${L06_JA_2018}02. Copy-Paste.cpp")
-add_executable(L06_JA2018_03.Teams "${L06_JA_2018}03. Teams.cpp")
-add_executable(L06_JA2018_04.Message "${L06_JA_2018}04. Message.cpp")
+set(L06_JA3_2017 "${L06}JA3-2017.12.23/")
+
+set(L06_JA3_2017_TASK_01 "${L06_JA3_2017}01. Big Division/")
+file(GLOB L06_JA3_2017_TASK_01_H ${L06_JA3_2017_TASK_01}/*.h)
+file(GLOB L06_JA3_2017_TASK_01_CPP ${L06_JA3_2017_TASK_01}/*.cpp)
+add_executable(L06_JA3_2017_01.BigDivision ${L06_JA3_2017_TASK_01_H} ${L06_JA3_2017_TASK_01_CPP})
+
+set(L06_JA3_2017_TASK_02 "${L06_JA3_2017}02. Near Cities/")
+file(GLOB L06_JA3_2017_TASK_02_H ${L06_JA3_2017_TASK_02}/*.h)
+file(GLOB L06_JA3_2017_TASK_02_CPP ${L06_JA3_2017_TASK_02}/*.cpp)
+add_executable(L06_JA3_2017_02.NearCities ${L06_JA3_2017_TASK_02_H} ${L06_JA3_2017_TASK_02_CPP})
+
+add_executable(L06_JA3_2017_03.Games "${L06_JA3_2017}03. Games/03. Games.cpp")
+add_executable(L06_JA3_2017_04.Message "${L06_JA3_2017}04. Message/04. Message.cpp")
+
+
+set(L06_JA3_2018 "${L06}JA3-2018.07.7/")
+add_executable(L06_JA3_2018_01.Sequence "${L06_JA3_2018}01. Sequence.cpp")
+add_executable(L06_JA3_2018_02.CopyPaste "${L06_JA3_2018}02. Copy-Paste.cpp")
+add_executable(L06_JA3_2018_03.Teams "${L06_JA3_2018}03. Teams.cpp")
+add_executable(L06_JA3_2018_04.Message "${L06_JA3_2018}04. Message.cpp")
 #######################################
 set(EXAMS "07. Exams/")
 
