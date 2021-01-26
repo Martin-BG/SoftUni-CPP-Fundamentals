@@ -1,26 +1,27 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <iterator>
 
 using Numbers = std::vector<int>;
 
 Numbers parseNumbersFromStream(std::istream& in);
 
-size_t findLongestIncreasingSubsequence(Numbers const& numbers);
+size_t getLongestIncreasingSubsequenceLength(Numbers const& numbers);
 
 int main() {
   std::istream& in = std::cin;
   std::ostream& out = std::cout;
 
   Numbers numbers = parseNumbersFromStream(in);
-  size_t lis = findLongestIncreasingSubsequence(numbers);
+  size_t lis = getLongestIncreasingSubsequenceLength(numbers);
 
   out << lis;
 
   return 0;
 }
 
-size_t findLongestIncreasingSubsequence(Numbers const& numbers) {
+size_t getLongestIncreasingSubsequenceLength(Numbers const& numbers) {
   auto lis = Numbers(numbers.size());
 
   for (size_t i = 0; i < numbers.size(); i++) {
@@ -38,12 +39,9 @@ size_t findLongestIncreasingSubsequence(Numbers const& numbers) {
 std::vector<int> parseNumbersFromStream(std::istream& in) {
   size_t size;
   in >> size;
-  Numbers numbers{ };
-  while (size-- > 0) {
-    int number;
-    in >> number;
-    numbers.push_back(number);
-  }
+  Numbers numbers(size);
+
+  std::copy_n(std::istream_iterator<int>(in), size, numbers.begin());
 
   return numbers;
 }
