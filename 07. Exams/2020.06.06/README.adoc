@@ -1,0 +1,3 @@
+= C++ Fundamentals - Exam Retake (6 June 2020)
+
+Link to https://judge.softuni.bg/Contests/Practice/Index/2451[Judge]
