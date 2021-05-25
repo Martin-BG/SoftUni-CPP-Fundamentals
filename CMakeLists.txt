@@ -276,3 +276,18 @@ set(E_2020_06_06 "${EXAMS}2020.06.06/")
 add_executable(E_2020_06_06T01.SortingPlayers "${E_2020_06_06}01. Sorting Players.cpp")
 add_executable(E_2020_06_06T02.Space "${E_2020_06_06}02. Space.cpp")
 add_executable(E_2020_06_06T03.PetExhibition "${E_2020_06_06}03. Pet Exhibition.cpp")
+
+set(E_2021_03_PREP "${EXAMS}2021.03-ExamPrep/")
+add_executable(E_2021_03_PREP_T01.Unused "${E_2021_03_PREP}01. Unused.cpp")
+add_executable(E_2021_03_PREP_T02.Decompression "${E_2021_03_PREP}02. Decompression.cpp")
+add_executable(E_2021_03_PREP_T03.Entities "${E_2021_03_PREP}03. Entities.cpp")
+
+set(E_2021_05_08 "${EXAMS}2021.05.08/")
+add_executable(E_2021_05_08_T01.BelowAverageOnly "${E_2021_05_08}01. Below Average Only")
+add_executable(E_2021_05_08_T02.SpecialItems "${E_2021_05_08}02. Special Items")
+add_executable(E_2021_05_08_T02.MachineCommands "${E_2021_05_08}03. Machine Commands")
+
+set(E_2021_05_15 "${EXAMS}2021.05.15/")
+add_executable(E_2021_05_15_T01.Top5Elements "${E_2021_05_15}01. Top 5 Elements.cpp")
+add_executable(E_2021_05_15_T02.SecretMessage "${E_2021_05_15}02. Secret Message.cpp")
+add_executable(E_2021_05_15_T03.DiffChecker "${E_2021_05_15}03. Diff Checker")
