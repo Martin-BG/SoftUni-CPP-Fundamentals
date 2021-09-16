@@ -283,11 +283,11 @@ add_executable(E_2021_03_PREP_T02.NumeralSystem "${E_2021_03_PREP}02. Numeral Sy
 add_executable(E_2021_03_PREP_T03.UltimateReverseWords "${E_2021_03_PREP}03. Ultimate Reverse Words.cpp")
 
 set(E_2021_05_08 "${EXAMS}2021.05.08/")
-add_executable(E_2021_05_08_T01.BelowAverageOnly "${E_2021_05_08}01. Below Average Only")
-add_executable(E_2021_05_08_T02.SpecialItems "${E_2021_05_08}02. Special Items")
-add_executable(E_2021_05_08_T02.MachineCommands "${E_2021_05_08}03. Machine Commands")
+add_executable(E_2021_05_08_T01.BelowAverageOnly "${E_2021_05_08}01. Below Average Only.cpp")
+add_executable(E_2021_05_08_T02.SpecialItems "${E_2021_05_08}02. Special Items.cpp")
+add_executable(E_2021_05_08_T02.MachineCommands "${E_2021_05_08}03. Machine Commands.cpp")
 
 set(E_2021_05_15 "${EXAMS}2021.05.15/")
 add_executable(E_2021_05_15_T01.Top5Elements "${E_2021_05_15}01. Top 5 Elements.cpp")
 add_executable(E_2021_05_15_T02.SecretMessage "${E_2021_05_15}02. Secret Message.cpp")
-add_executable(E_2021_05_15_T03.DiffChecker "${E_2021_05_15}03. Diff Checker")
+add_executable(E_2021_05_15_T03.DiffChecker "${E_2021_05_15}03. Diff Checker.cpp")
