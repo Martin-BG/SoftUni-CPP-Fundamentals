@@ -4,18 +4,22 @@
 #include <iterator>
 #include <sstream>
 
-using IntMatrix = std::vector<std::vector<int>>;
+using IntRow = std::vector<int>;
+using IntMatrix = std::vector<IntRow>;
 
 IntMatrix readMatrixFromStream(std::basic_istream<char>& istream);
 
 int main() {
-  auto firstMatrix = readMatrixFromStream(std::cin);
-  auto secondMatrix = readMatrixFromStream(std::cin);
+  std::istream& istream = std::cin;
+  std::ostream& ostream = std::cout;
+
+  auto firstMatrix = readMatrixFromStream(istream);
+  auto secondMatrix = readMatrixFromStream(istream);
 
   if (firstMatrix == secondMatrix) {
-    std::cout << "equal" << std::endl;
+    ostream << "equal" << std::endl;
   } else {
-    std::cout << "not equal" << std::endl;
+    ostream << "not equal" << std::endl;
   }
 
   return 0;
@@ -27,10 +31,10 @@ IntMatrix readMatrixFromStream(std::basic_istream<char>& istream) {
 
   auto matrix{ IntMatrix(rows) };
 
-  for_each(matrix.begin(), matrix.end(), [&istream](std::vector<int>& row) {
+  for_each(matrix.begin(), matrix.end(), [&istream](IntRow& row) {
     std::string input;
     getline(istream >> std::ws, input);
-    std::istringstream iss{ input };
+    std::istringstream iss{input};
     copy(std::istream_iterator<int>(iss), std::istream_iterator<int>(), std::back_inserter(row));
   });
 
