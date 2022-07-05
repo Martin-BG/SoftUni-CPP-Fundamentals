@@ -10,6 +10,8 @@
 **/cmake-build-release/
 **/cmake-build-minsizerel/
 **/cmake-build-relwithdebinfo/
+**/cmake-build-debug-clang-14/
+**/cmake-build-debug-gcc-12/
 #CMakeLists.txt
 
 # Prerequisites
