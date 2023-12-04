@@ -291,3 +291,7 @@ set(E_2021_05_15 "${EXAMS}2021.05.15/")
 add_executable(E_2021_05_15_T01.Top5Elements "${E_2021_05_15}01. Top 5 Elements.cpp")
 add_executable(E_2021_05_15_T02.SecretMessage "${E_2021_05_15}02. Secret Message.cpp")
 add_executable(E_2021_05_15_T03.DiffChecker "${E_2021_05_15}03. Diff Checker.cpp")
+
+set(E_2023_04_22 "${EXAMS}2023.04.22/")
+add_executable(E_2023_04_22_T01.FunSequence "${E_2023_04_22}01. Fun Sequence.cpp")
+add_executable(E_2023_04_22_T03.Punctuation "${E_2023_04_22}03. Punctuation.cpp")

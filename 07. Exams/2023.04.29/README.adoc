@@ -1,0 +1,7 @@
+= C++ Fundamentals - Retake Exam (29 April 2023)
+
+Link to https://judge.softuni.org/Contests/4043/CPlusPlus-Fundamentals-Retake-Exam-29-April-2023[Judge]
+
+. Below Average Only - same as xref:../2021.05.08/01. Below Average Only.cpp[this]
+. Secret Message - same as xref:../2021.05.15/02. Secret Message.cpp[this]
+. Machine Commands - same as xref:../2021.05.08/03. Machine Commands.cpp[this]

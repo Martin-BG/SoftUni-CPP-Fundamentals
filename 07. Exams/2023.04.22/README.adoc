@@ -1,0 +1,6 @@
+= C++ Fundamentals - Regular Exam (22 April 2023)
+
+Link to https://judge.softuni.org/Contests/4042/CPlusPlus-Fundamentals-Regular-Exam-22-April-2023[Judge]
+
+Task #2 Special Items - same as xref:../2021.05.08/02. Special Items.cpp[this]
+
