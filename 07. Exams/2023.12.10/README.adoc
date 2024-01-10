@@ -1,0 +1,9 @@
+= C++ Fundamentals - Regular Exam - 10 December 2023
+
+Link to https://judge.softuni.org/Contests/Practice/Index/4435[Judge]
+
+== Notes
+
+. Test #9 in Judge for Calculations problem has incorrect expected result caused by number overflow (using int instead of a bigger number).
+Provided solution uses `int64_t` and avoids the overflow, but in order to get 100% in Judge the type should be replaced by `int`.
+. Tests #4 and #5 for Train Composition problem have at least one invalid command (not P, E, M or L) that should be ignored (no output).

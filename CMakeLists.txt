@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.13)
 project(CPP_Fundamentals)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
 #######################################
@@ -295,3 +295,8 @@ add_executable(E_2021_05_15_T03.DiffChecker "${E_2021_05_15}03. Diff Checker.cpp
 set(E_2023_04_22 "${EXAMS}2023.04.22/")
 add_executable(E_2023_04_22_T01.FunSequence "${E_2023_04_22}01. Fun Sequence.cpp")
 add_executable(E_2023_04_22_T03.Punctuation "${E_2023_04_22}03. Punctuation.cpp")
+
+set(E_2023_12_10 "${EXAMS}2023.12.10/")
+add_executable(E_2023_12_10_T01.HowManyVowels "${E_2023_12_10}01. How Many Vowels.cpp")
+add_executable(E_2023_12_10_T02.Calculations "${E_2023_12_10}02. Calculations.cpp")
+add_executable(E_2023_12_10_T03.TrainComposition "${E_2023_12_10}03. Train Composition.cpp")
